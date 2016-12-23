@@ -60,7 +60,7 @@ data <- data.frame() #Data frame to be populated with results
 for(i in 1:nrow(modelerData)) {
   text<-modelerData$%%text%%[i] #Load text 
   text <-iconv(text, to="UTF-8") #convert to UTF-8 for Watson
-  base <- "https://gateway.watsonplatform.net/language-translation/api/v2/identify"
+  base <- "https://gateway.watsonplatform.net/language-translator/api/v2/identify"
   
   u <- "%%user%%"   #Username and Password provided in CDB
   p <- "%%password%%"
